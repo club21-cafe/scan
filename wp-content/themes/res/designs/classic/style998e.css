@@ -384,6 +384,7 @@ html[lang="en"] .classic-category__heading {
   margin: 0;
   object-fit: cover;
   object-position: center;
+  opacity: 0.01;
 }
 
 /* Use this class when an individual photo needs a different crop. */
@@ -518,6 +519,7 @@ html[lang="ar"] .item__price::after {
   color: var(--classic-muted);
   /* font-size: 0.78rem; */
   line-height: 1.55;
+  max-width: 88%;
 }
 
 .menu-design--classic .item__description p,
@@ -571,7 +573,7 @@ html[lang="ar"] .item__price::after {
 /* 11. PRODUCT BADGES
    --------------------------------------------------------- */
 
-.menu-design--classic .product-badges,
+/* .menu-design--classic .product-badges,
 .menu-design--classic .item__badges {
   display: flex;
   flex-wrap: wrap;
@@ -591,7 +593,7 @@ html[lang="ar"] .item__price::after {
   color: var(--classic-brown);
   font-size: 0.7rem;
   font-weight: 700;
-}
+} */
 
 /* 12. LANGUAGE VISIBILITY
    ---------------------------------------------------------
@@ -744,7 +746,7 @@ a.category-link.active img {
 /* 15. COMPACT CATEGORIES
    --------------------------------------------------------- */
 section.category--compact .item__description {
-  border: solid red;
+  /* border: solid red; */
   display: none;
 }
 
@@ -984,4 +986,19 @@ section.category--compact .item__description {
 .dashicons {
   vertical-align: middle;
   margin-inline-end: 6px;
+}
+.category-icon {
+  display: inline-block;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  background-color: var(--classic-gold-light);
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
 }
