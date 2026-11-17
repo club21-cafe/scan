@@ -893,10 +893,10 @@ section.category--compact .item__description {
   padding: 16px 12px 28px;
 }
 
-.menu-design--classic .item__name {
+/* .menu-design--classic .item__name {
   overflow-wrap: anywhere;
   font-size: 0.95rem;
-}
+} */
 
 /* Tablet and desktop: 2 columns */
 @media (min-width: 768px) {
@@ -1003,4 +1003,25 @@ section.category--compact .item__description {
 
   -webkit-mask-position: center;
   mask-position: center;
+}
+/* badges */
+/*prettier-ignore*/
+.item__heading {
+  /* .item-name[data-item-badges].badge-popular::after     {color: #d97706; content: "\f06d  "; }
+  .item-name[data-item-badges].badge-recommended::after {color: #b7791f; content: "\f005  "; }
+  .item-name[data-item-badges].badge-new::after         {color: #15803d; content: "\f02b  "; }
+  .item-name[data-item-badges].badge-spicy::after       {color: #dc2626; content: "\f816  "; }
+  .item-name[data-item-badges].badge-vegetarian::after  {color: #16a34a; content: "\f06c"; } */
+
+  /* .item-name[class*="has-badge-"]::after { */
+  .has-badge::after{
+      content: attr(data-item-badges);
+
+      color: attr(data-item-badges-color);
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 0.8em;
+      margin-inline-start: 0.4em;
+      white-space: pre;
+  }
 }

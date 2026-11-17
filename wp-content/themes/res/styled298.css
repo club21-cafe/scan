@@ -62,7 +62,7 @@ section.menu-category {
 }
 
 .item__name .rm-menu-inline-logo {
-  max-width: 36%;
+  /* max-width: 36%; */
 }
 .item__description .rm-menu-inline-logo {
   max-width: 12%;
