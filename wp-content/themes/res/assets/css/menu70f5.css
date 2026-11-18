@@ -1,24 +1,13 @@
 /* Shared menu functionality */
 
-.item__name[data-item-badges]::after::after {
-}
-.item__name[data-item-badges]::after {
-  content: attr(data-item-badges);
-  content: attr(data-item-badges) / attr(data-item-badges-ar);
-  /* color: attr(data-item-badges-color) !important; */
-  color: var(--item-badge-color, #c7822b);
-  display: inline-block;
-  margin-inline-start: 0.4em;
-  font-family: "Font Awesome 6 Free";
-  font-size: 0.75em;
-  font-weight: 900;
-  line-height: 1;
-  white-space: nowrap;
+.item__name .badge {
+  margin-inline-start: 0.3em;
+  font-size: xx-small;
 }
 
-html[lang="en"] .item__name[data-item-badges]::after {
+/* html[lang="en"] .item__name[data-item-badges]::after {
   content: attr(data-item-badges) / attr(data-item-badges-en);
-}
+} */
 
 .category-name-ar,
 .category-name-en,
