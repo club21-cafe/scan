@@ -35,7 +35,14 @@ body * {
 div#nav-logo {
   margin: 0 0.2rem;
 }
-
+.inline-notice {
+  font-weight: 800;
+  font-style: italic;
+  /* text-decoration: underline; */
+}
+.underline-1 {
+  text-underline-offset: 0.25rem;
+}
 section.menu-category {
   display: flex;
   flex-direction: column;

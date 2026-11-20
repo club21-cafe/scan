@@ -77,7 +77,7 @@
   .header__description {font-size: var(--fs-restaurant-description);}
   a.category-link  { font-size: var(--fs-navigation); }
   .classic-category__title { font-weight: 800;font-size: var(--fs-category-title); }
-  .item__description{font-weight: 700;}
+  .item__description{font-weight: 600;}
   .variation-description{font-weight: 500;}
   .item__description,
   .variation-description {
