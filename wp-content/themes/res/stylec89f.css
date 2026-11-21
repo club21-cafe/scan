@@ -382,3 +382,6 @@ html[lang="en"] .item__badge-en {
   background: #eaf6ec;
   color: #2c773a;
 }
+.del {
+  display: none !important;
+}
